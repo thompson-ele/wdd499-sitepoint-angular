@@ -1,5 +1,12 @@
-<p>This is the partial for view 2.</p>
 <p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
+  From View 2.
+  <ul>
+    <li>First Name: {{firstname}}</li>
+    <li>Last Name: {{lastname}}</li>
+  </ul>
+
+  Our additional users are:
+  <ul>
+    <li ng-repeat="name in names">{{name}}</li>
+  </ul>
 </p>

@@ -2,10 +2,10 @@
 <html lang="en" ng-app="myApp">
 
 <head>
-  <title>Finance Meter</title>
+  <title>Test Angular JS</title>
 </head>
 
-<body ng-controller="FinanceController">
+<!--<body ng-controller="FinanceController">
 
   Your Salary?
   <input type="text" ng-model="salary">
@@ -13,6 +13,27 @@
   <input type="text" ng-model="percentage">%
   <br/>The amount to be spent in shopping will be: 
 ➥<span>{{result()}}</span>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>-->
+
+<!--<body ng-controller="GreetingController as greetingController">
+  {{greetingController.greeting}} User! The current date/time is <span>{{greetingController.now | date: 'medium'}}</span>.
+  <br>
+  <button ng-click="greetingController.getRandomHelloMessage()">Random Hello Message</button>-->
+
+<body ng-init="fbID='100001277346516'">
+  <h1>Two way data binding</h1>
+
+  <input type="text" ng-model="fbID" />
+  <br>
+  <span><img ng-src="https://graph.facebook.com/{{fbID}}/picture?type=normal"/></span>
+
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-route.js"></script>
   <script src="js/app.js"></script>
